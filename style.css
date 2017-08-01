@@ -43,6 +43,31 @@ a:hover article h3, a:focus article h3 {
   color: inherit;
 }
 
+.button {
+  padding: .25em 0.5em;
+  display: inline-block;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background: #9636ce;
+  color: #fff;
+  border-color: transparent;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
 p {
   margin: .75em 0;
 }
@@ -204,14 +229,17 @@ section.speaking a {
   color: #9636ce;
 }
 
-section.speaking ul {
-  list-style: none;
-  padding: 0;
+section.speaking .speaking-list {
   float: left;
   width: 48%;
   margin: 0 2% 0 0;
   font-size: 1.1em;
   cursor: default;
+}
+
+section.speaking div ul {
+  list-style: none;
+  padding: 0;
 }
 
 section.speaking ul li {
