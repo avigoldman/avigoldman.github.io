@@ -240,6 +240,7 @@ section.speaking .speaking-list {
 section.speaking div ul {
   list-style: none;
   padding: 0;
+  text-align: left;
 }
 
 section.speaking ul li {
@@ -293,7 +294,9 @@ footer {
     width: 100%;
   }
 
-  section.speaking ul, section.speaking #map {
+  section.speaking .speaking-list, section.speaking #map {
     width: 100%;
+    margin-bottom: 1em;
+    text-align: center;
   }
 }
