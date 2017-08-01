@@ -1,0 +1,271 @@
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:  "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+  font-size: 18px;
+  background: #fcfcfc;
+  color: #333;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;        
+}
+
+h3 {
+  margin-bottom: .75em;
+  line-height: 1.15em;
+}
+
+a {
+  color: #36a3ce;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a, a * {
+  transition: all .2s;
+}
+
+a article * {
+  color: #333;
+}
+
+a article {
+  font-weight: normal;
+}
+
+a:hover article h3, a:focus article h3 {
+  color: inherit;
+}
+
+p {
+  margin: .75em 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 55em;
+  margin: auto;
+}
+
+header {
+  padding: 6rem 0 0rem 0;
+  background: white;
+}
+
+header h1 {
+  letter-spacing: 1px;
+  font-size: 3em;
+}
+
+.tagline {
+  font-size: 1.75em;
+  line-height: 1.25em;
+  margin: 0 0 2.5rem 0;
+}
+
+.social {
+  margin: 0 0 3rem 0;
+}
+
+.social a {
+  color: #777;
+  padding-bottom: .2em;
+  display: inline-block;
+  border-bottom: 2px solid #999;
+  margin: .25em 1em 0 0;
+}
+
+.social a:hover, .social a:focus {
+  color: #36a3ce;
+  border-bottom-color: #36a3ce;
+  padding-bottom: .1em;
+}
+
+.separator {
+  font-size: 1.25em;
+  text-align: center;
+  word-spacing: .5em;
+  display: none;
+}
+
+main {
+  padding: 6rem 0;
+}
+
+section {
+  padding-bottom: 4rem;
+}
+
+section h2 {
+  /*font-size: 1em;*/
+  padding: 2em 0 .25em 0;
+  margin-bottom: 2rem;
+  border-top: 2px dashed #EFEFEF;
+}
+
+section h2 span {
+  opacity: 0;
+  font-size: .75em;
+  color: #777;
+  line-height: 1.5rem;
+  top: -1px;
+  margin-left: .1em;
+  font-weight: normal;
+}
+
+section h2 span:before {
+  content: "\203A";
+  font-size: 1.2em;
+  margin-right: .27em;
+}
+
+section h2 a:hover span, section h2 a:focus span {
+  opacity: 1;
+  margin-left: .2em;
+}
+
+section.projects a {
+  color: #e03535;
+}
+
+section.projects div a {
+  border: 1px solid #f1f1f1;
+  padding: 1rem 1.5em;
+  margin: 1rem 0;
+  border-radius: 4px;
+  box-shadow: 0 7px 27px 1px rgba(221, 221, 221, 0.3);
+  cursor: pointer;
+  transition: all .25s;
+  width: 49%;
+}
+
+section.projects div {
+  align-items: stretch;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section.projects div a:hover, section.projects div a:focus {
+  transform: translateY(-.15em);
+  box-shadow: 0 7px 27px 1px rgba(221, 221, 221, 0.45);
+}
+
+section.blog a {
+  color: #36a3ce;
+}
+
+section.blog h3:before {
+  content: "\203A";
+  margin-right: 0.2em;
+  color: #BBB;
+  transition: all .2s;
+}
+
+section.blog article {
+  margin-bottom: 2em;
+}
+
+section.blog h3 {
+  margin: .25em 0 .5em 0;
+}
+
+
+section.blog article .meta {
+  font-size: .65em;
+  font-weight: 500;
+  color: #777;
+  text-transform: uppercase;
+  margin-left: 1em;
+}
+
+section.blog article .meta small {
+  font-size: 0.5em;
+  top: -2px;
+  margin: 0 4px;
+}
+
+section.blog article p {
+  margin-top: 0.25em;
+}
+
+section.blog a:hover h3:before, section.blog a:focus h3:before {
+  margin-right: 0.4em;
+}
+
+section.speaking a {
+  color: #9636ce;
+}
+
+section.speaking ul {
+  list-style: none;
+  padding: 0;
+  float: left;
+  width: 48%;
+  margin: 0 2% 0 0;
+  font-size: 1.1em;
+  cursor: default;
+}
+
+section.speaking ul li {
+  margin-bottom: 0.27em;
+}
+
+section.speaking ul li:before {
+  content: "\203A";
+  margin-right: 0.27em;
+  color: #BBB;
+  transition: all .2s;
+}
+
+section.speaking ul li:hover:before, section.speaking ul li:focus:before {
+  margin-right: 0.5em;
+}
+
+section.speaking #map {
+  float: left;
+  width: 50%;
+  border-radius: 4px;
+  border: 0;
+  height: 50vh;
+  max-height: 300px;
+  min-height: 200px;
+}
+
+.speaking div:after {
+  content: " ";
+  display: block;
+  clear: both; 
+}
+
+footer {
+  background: #F4F6F9;
+  padding: 1em;
+  text-align: right;
+}
+
+@media screen and (max-width: 33em) {
+  section h2 span {
+    opacity: 1;
+    display: block;
+  }
+
+  section.projects div {
+    flex-direction: column;
+  }
+
+  section.projects div a {
+    width: 100%;
+  }
+
+  section.speaking ul, section.speaking #map {
+    width: 100%;
+  }
+}
