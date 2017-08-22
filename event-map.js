@@ -3,6 +3,7 @@ var locations = {
   sfhtml5:     { lat: 37.7900517, lng: -122.3923731 }, // 345 Spear Street, San Francisco, CA, 94105, us
   rit:         { lat: 43.0847046, lng: -77.6772667  }, // 1 Lomb Memorial Dr, Rochester, NY 14623
   angelhackSV: { lat: 37.5635335, lng: -122.3271869 }, // 44 E 3rd Ave, San Mateo, CA 94401, USA
+  devbootcamp: { lat: 40.706551, lng: -74.009039 }, // 48 Wall St, 15th Fl, New York, NY 10005
 };
 
 var events = document.getElementsByClassName("event");
